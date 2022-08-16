@@ -1,10 +1,9 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 const numberOfGames = 3;
 
-const playEvenGame = () => {
+const playGame = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -30,4 +29,4 @@ const playEvenGame = () => {
   return console.log(`Congratulations, ${userName}!`);
 };
 
-export default playEvenGame;
+export default playGame;
