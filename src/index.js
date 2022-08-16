@@ -9,8 +9,9 @@ const startGame = (gameDescription, playGame) => {
   console.log(gameDescription);
 
   for (let i = 0; i < maxRoundCount; i += 1) {
-
+    playGame();
   }
+  
 };
 
 export default startGame;

@@ -1,28 +1,27 @@
 import readlineSync from "readline-sync";
-import startGame from "../index";
+// import startGame from "../index";
 
-const gameDescription = 'What is the result of the expression?';
+const gameDescription = "What is the result of the expression?";
 const numberOfGames = 3;
 const maxNumber = 1;
 const minNumber = 20;
 
-
 const calculate = (firstOperand, secondOperand, operator) => {
   switch (operator) {
-    case '+':
+    case "+":
       return firstOperand + secondOperand;
-    case '-':
+    case "-":
       return firstOperand - secondOperand;
-    case '*':
+    case "*":
       return firstOperand * secondOperand;
     default:
-      return 'undefined operator';
+      return "undefined operator";
   }
 };
 
-const getRandom = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+const getRandom = (minParameter, maxParameter) => {
+  const min = Math.ceil(minParameter);
+  const max = Math.floor(maxParameter);
   return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
 };
 
@@ -32,15 +31,26 @@ const playGame = () => {
   console.log(`Hello, ${userName}!`);
   console.log(gameDescription);
 
-  const number1 = getRandom(minNumber, maxNumber);
-  const number2 = getRandom(minNumber, maxNumber);
-  const operators = ['+', '-', '*'];
-  const randomOperator = operators[getRandom(0, operators.length - 1)];
+  for (let i = 0; i < numberOfGames; i += 1) {
+    const number1 = getRandom(minNumber, maxNumber);
+    const number2 = getRandom(minNumber, maxNumber);
+    const operators = ["+", "-", "*"];
+    const randomOperator = operators[getRandom(0, operators.length - 1)];
 
-  const question = `Question: ${number1} ${randomOperator} ${number2}?`;
-  rightAnswer = calculate(number1, number2, randomOperator);
+    console.log(`Question: ${number1}${randomOperator}${number2}?`);
+    const correctAnswer = calculate(number1, number2, randomOperator);
+    const userAnswer = readlineSync.question("You answer: ");
 
-  return [question, rightAnswer.toString]
-}
+    if (correctAnswer == +userAnswer) {
+      console.log("Correct!");
+    } else {
+      console.log(
+        `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+      );
+      return console.log(`Let's try again, ${userName}!`);
+    }
+  }
+  return console.log(`Congratulations, ${userName}!`);
+};
 
 export default playGame;
