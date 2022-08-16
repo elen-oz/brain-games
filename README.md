@@ -10,4 +10,4 @@
    [![asciicast](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS.svg)](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS)
 
 2. Brain-calc:
-   [![asciicast](https://asciinema.org/a/Xo8oIvPKSB063vxsTOCj1ordB)](https://asciinema.org/a/Xo8oIvPKSB063vxsTOCj1ordB)
+   [![asciicast](https://asciinema.org/a/LVXgzff0EnCWJbOYvaYasbkie.svg)](https://asciinema.org/a/LVXgzff0EnCWJbOYvaYasbkie)
