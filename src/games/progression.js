@@ -16,20 +16,15 @@ const playGame = () => {
   console.log(gameDescription);
 
   for (let i = 0; i < numberOfGames; i += 1) {
-    console.log('======================NEW GAME======================');
     const numberFirst = getRandom(1, 10);
-    console.log('numberFirst: ', numberFirst);
-    let numberDifference = getRandom(1, 10);
-    console.log('numberDifference: ', numberDifference);
+    const numberDifference = getRandom(1, 10);
     const progLenght = getRandom(5, 10);
-    console.log('progLenght: ', progLenght);
     const arrOfProgression = [numberFirst];
     let lengthOffArr = 0;
 
     for (let j = 0; j < progLenght - 1; j += 1) {
       arrOfProgression.push(arrOfProgression[j] + numberDifference);
       lengthOffArr += 1;
-      console.log('arrOfProgression: ', arrOfProgression);
     }
 
     const missedNum = getRandom(0, lengthOffArr);
