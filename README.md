@@ -4,4 +4,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-[![asciicast](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS.svg)](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS)
+# Game preview:
+
+1. Brain-even:
+   [![asciicast](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS.svg)](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS)
+
+2. Brain-calc:
+   [![asciicast](https://asciinema.org/a/Xo8oIvPKSB063vxsTOCj1ordB)](https://asciinema.org/a/Xo8oIvPKSB063vxsTOCj1ordB)
