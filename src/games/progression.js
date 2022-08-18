@@ -1,5 +1,5 @@
-import { enginGame } from '../index.js';
-import { getRandom } from '../utilities.js';
+import enginGame from '../index.js';
+import getRandom from '../utilities.js';
 
 const gameDescription = 'What number is missing in the progression?';
 

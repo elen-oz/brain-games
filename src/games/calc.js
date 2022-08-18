@@ -1,5 +1,5 @@
-import { enginGame } from '../index.js';
-import { getRandom } from '../utilities.js';
+import enginGame from '../index.js';
+import getRandom from '../utilities.js';
 
 const gameDescription = 'What is the result of the expression?';
 const maxNumber = 1;
@@ -15,7 +15,7 @@ const getCalcResult = (firstOperand, secondOperand, operator) => {
     case '*':
       return firstOperand * secondOperand;
     default:
-      return 'Unknown operator: ${operator}';
+      return `Unknown operator: ${operator}`;
   }
 };
 

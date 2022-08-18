@@ -1,5 +1,5 @@
-import { enginGame } from '../index.js';
-import { getRandom } from '../utilities.js';
+import enginGame from '../index.js';
+import getRandom from '../utilities.js';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 const maxNumber = 1;

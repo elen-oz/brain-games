@@ -23,4 +23,4 @@ const enginGame = (gameDescription, playGame) => {
   return console.log(`Congratulations, ${userName}!`);
 };
 
-export enginGame;
+export default enginGame;
