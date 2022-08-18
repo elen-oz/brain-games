@@ -1,20 +1,20 @@
-import { getRandom, startGame } from '../index.js';
+import { getRandom, startGame } from "../index.js";
 
-const gameDescription = 'What is the result of the expression?';
+const gameDescription = "What is the result of the expression?";
 const maxNumber = 1;
-const minNumber = 20;
-const operators = ['+', '-', '*'];
+const minNumber = 10;
+const operators = ["+", "-", "*"];
 
 const getCalcResult = (firstOperand, secondOperand, operator) => {
   switch (operator) {
-    case '+':
+    case "+":
       return firstOperand + secondOperand;
-    case '-':
+    case "-":
       return firstOperand - secondOperand;
-    case '*':
+    case "*":
       return firstOperand * secondOperand;
     default:
-      return 'undefined operator';
+      return "undefined operator";
   }
 };
 
