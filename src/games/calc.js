@@ -1,4 +1,5 @@
-import { getRandom, startGame } from '../index.js';
+import { startGame } from '../index.js';
+import { getRandom } from '../utilities.js';
 
 const gameDescription = 'What is the result of the expression?';
 const maxNumber = 1;
