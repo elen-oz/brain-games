@@ -4,7 +4,7 @@ import getRandom from '../utilities.js';
 const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (number) => number % 2 === 0;
 
-const playGame = () => {
+const generateRound = () => {
   const randomNumber = getRandom(1, 100);
   const questionToUser = `${randomNumber}`;
   const correctAnswer = isEven(randomNumber) ? 'yes' : 'no';
@@ -12,5 +12,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playEvenGame = () => enginGame(gameDescription, playGame);
+const playEvenGame = () => enginGame(gameDescription, generateRound);
 export default playEvenGame;

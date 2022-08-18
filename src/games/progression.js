@@ -3,7 +3,7 @@ import getRandom from '../utilities.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const playGame = () => {
+const generateRound = () => {
   const numberFirst = getRandom(1, 10);
   const numberDifference = getRandom(1, 10);
   const progLenght = getRandom(5, 10);
@@ -24,5 +24,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playProgressionGame = () => enginGame(gameDescription, playGame);
+const playProgressionGame = () => enginGame(gameDescription, generateRound);
 export default playProgressionGame;

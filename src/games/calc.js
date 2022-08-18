@@ -19,7 +19,7 @@ const getCalcResult = (firstOperand, secondOperand, operator) => {
   }
 };
 
-const playGame = () => {
+const generateRound = () => {
   const number1 = getRandom(minNumber, maxNumber);
   const number2 = getRandom(minNumber, maxNumber);
   const randomOperator = operators[getRandom(0, operators.length - 1)];
@@ -29,5 +29,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playCalcGame = () => enginGame(gameDescription, playGame);
+const playCalcGame = () => enginGame(gameDescription, generateRound);
 export default playCalcGame;

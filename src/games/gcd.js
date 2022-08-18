@@ -15,7 +15,7 @@ const getGcd = (x, y) => {
   return result;
 };
 
-const playGame = () => {
+const generateRound = () => {
   const number1 = getRandom(minNumber, maxNumber);
   const number2 = getRandom(minNumber, maxNumber);
   const questionToUser = `${number1} ${number2}`;
@@ -24,5 +24,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playGcdGame = () => enginGame(gameDescription, playGame);
+const playGcdGame = () => enginGame(gameDescription, generateRound);
 export default playGcdGame;

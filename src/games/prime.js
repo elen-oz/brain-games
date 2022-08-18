@@ -16,7 +16,7 @@ const isPrime = (number) => {
   return true;
 };
 
-const playGame = () => {
+const generateRound = () => {
   const randomNumber = getRandom(2, 50);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   const questionToUser = `${randomNumber}`;
@@ -24,5 +24,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playPrimeGame = () => enginGame(gameDescription, playGame);
+const playPrimeGame = () => enginGame(gameDescription, generateRound);
 export default playPrimeGame;
