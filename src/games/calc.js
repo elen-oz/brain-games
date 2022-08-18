@@ -22,7 +22,7 @@ const playGame = () => {
   const number1 = getRandom(minNumber, maxNumber);
   const number2 = getRandom(minNumber, maxNumber);
   const randomOperator = operators[getRandom(0, operators.length - 1)];
-  const questionToUser = `${number1}${randomOperator}${number2}`;
+  const questionToUser = `${number1} ${randomOperator} ${number2}`;
   const correctAnswer = getCalcResult(number1, number2, randomOperator);
 
   return [questionToUser, correctAnswer];
