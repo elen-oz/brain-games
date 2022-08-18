@@ -5,11 +5,13 @@ const maxNumber = 1;
 const minNumber = 100;
 
 const getGcd = (x, y) => {
+  let result;
   if (y === 0) {
-    return x;
+    result = x;
   } else {
-    return getGcd(y, x % y);
+    result = getGcd(y, x % y);
   }
+  return result;
 };
 
 const playGame = () => {

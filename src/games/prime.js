@@ -4,7 +4,7 @@ const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer
 
 const isPrime = (number) => {
   if (number < 2) {
-    return true
+    return true;
   }
   let flag = true;
   for (let j = 2; j <= number / 2; j += 1) {
@@ -14,12 +14,12 @@ const isPrime = (number) => {
     }
   }
   return flag;
-}
+};
 
 const playGame = () => {
   const randomNumber = getRandom(2, 50);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  const questionToUser = `${randomNumber}`
+  const questionToUser = `${randomNumber}`;
 
   return [questionToUser, correctAnswer];
 };
