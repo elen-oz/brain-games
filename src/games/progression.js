@@ -17,7 +17,8 @@ const playGame = () => {
   const missedNum = getRandom(0, lengthOffArr);
   const correctAnswer = arrOfProgression[missedNum];
   arrOfProgression[missedNum] = '..';
-  const questionToUser = `${arrOfProgression}`;
+  const outputProgression = arrOfProgression.join(' ');
+  const questionToUser = `${outputProgression}`;
 
   return [questionToUser, correctAnswer];
 };

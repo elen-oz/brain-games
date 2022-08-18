@@ -29,7 +29,6 @@ const startGame = (gameDescription, playGame) => {
   return console.log(`Congratulations, ${userName}!`);
 };
 
-// export numberOfGames;
 export {
   getRandom,
   startGame,
