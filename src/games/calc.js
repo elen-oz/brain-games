@@ -1,4 +1,4 @@
-import { startGame } from '../index.js';
+import { enginGame } from '../index.js';
 import { getRandom } from '../utilities.js';
 
 const gameDescription = 'What is the result of the expression?';
@@ -15,7 +15,7 @@ const getCalcResult = (firstOperand, secondOperand, operator) => {
     case '*':
       return firstOperand * secondOperand;
     default:
-      return 'undefined operator';
+      return 'Unknown operator: ${operator}';
   }
 };
 
@@ -29,5 +29,5 @@ const playGame = () => {
   return [questionToUser, correctAnswer];
 };
 
-const playCalcGame = () => startGame(gameDescription, playGame);
+const playCalcGame = () => enginGame(gameDescription, playGame);
 export default playCalcGame;
