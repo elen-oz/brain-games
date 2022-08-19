@@ -9,7 +9,6 @@
 
 
 This mini-project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name.
-
 The number of rounds in all games is three.
 
 
@@ -17,7 +16,7 @@ The number of rounds in all games is three.
 - brain-calc: asks for the result of an operation on two numbers (addition, subtraction, multiplication);
 - brain-gcd: asks for the greatest common divisor of two numbers;
 - brain-progression: asks for the missing element of an arithmetic progression;
-- brain-prime: Asks the user if a number is prime.
+- brain-prime: asks the user if a number is prime.
 
 # Game preview:
 
@@ -35,7 +34,7 @@ The number of rounds in all games is three.
 
 4. Brain-progression:
 
-   [![asciicast](https://asciinema.org/a/UO6yTFK1uzsE040aYsyG9KlGP.svg)](https://asciinema.org/a/UO6yTFK1uzsE040aYsyG9KlGP)
+   [![asciicast](https://asciinema.org/a/dis6YezCRGtsdZuqsMA81U76W.svg)](https://asciinema.org/a/dis6YezCRGtsdZuqsMA81U76W)
 
 5. Brain-prime:
 
