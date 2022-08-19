@@ -3,23 +3,25 @@ import getRandom from '../utilities.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generateRound = () => {
-  const numberFirst = getRandom(1, 10);
-  const numberDifference = getRandom(1, 10);
-  const progLenght = getRandom(5, 10);
-  const arrOfProgression = [numberFirst];
-  let lengthOffArr = 0;
+const generateProgression = (firstNumber, step, lenghtOfProgr) => {
+  const arrOfProgression = [firstNumber];
 
-  for (let i = 0; i < progLenght - 1; i += 1) {
-    arrOfProgression.push(arrOfProgression[i] + numberDifference);
-    lengthOffArr += 1;
+  for (let i = 0; i < lenghtOfProgr; i += 1) {
+    arrOfProgression.push(arrOfProgression[i] + step);
   }
 
-  const missedNum = getRandom(0, lengthOffArr);
-  const correctAnswer = arrOfProgression[missedNum];
-  arrOfProgression[missedNum] = '..';
-  const outputProgression = arrOfProgression.join(' ');
-  const questionToUser = `${outputProgression}`;
+  return arrOfProgression;
+}
+
+const generateRound = () => {
+  const firstNumber = getRandom(1, 10);
+  const step = getRandom(1, 10);
+  const lenghtOfProgr = 9;
+  const progression = generateProgression(firstNumber, step, lenghtOfProgr);
+  const missedNum = getRandom(0, lenghtOfProgr);
+  const correctAnswer = progression[missedNum];
+  progression[missedNum] = '..';
+  const questionToUser = progression.join(' ');
 
   return [questionToUser, correctAnswer];
 };
