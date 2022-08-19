@@ -8,7 +8,7 @@
 ## Project description
 
 
-This mini-project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name.
+This project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name.
 The number of rounds in all games is three.
 
 
@@ -22,7 +22,7 @@ The number of rounds in all games is three.
 
 1. Brain-even:
 
-   [![asciicast](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS.svg)](https://asciinema.org/a/dINm1rGOXU9avf0Wrvn4U4GeS)
+   [![asciicast](https://asciinema.org/a/VNFIBdm8W7BodG337UWChzyR9.svg)](https://asciinema.org/a/VNFIBdm8W7BodG337UWChzyR9)
 
 2. Brain-calc:
 
