@@ -2,7 +2,8 @@
 
 [![Actions Status](https://github.com/elen-oz/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/elen-oz/frontend-project-lvl1/actions)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/6922be521c7684d6c6c9/maintainability)](https://codeclimate.com/github/elen-oz/frontend-project-lvl1/maintainability)
+
 
 # Game preview:
 
