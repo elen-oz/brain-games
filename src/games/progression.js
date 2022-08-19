@@ -4,7 +4,7 @@ import getRandom from '../utilities.js';
 const gameDescription = 'What number is missing in the progression?';
 const lenghtOfProgr = 9;
 
-const getQuestion= (firstNumber, step, missedNumerIndex) => {
+const getQuestion = (firstNumber, step, missedNumerIndex) => {
   const arrOfProgression = [firstNumber];
   for (let i = 0; i < lenghtOfProgr; i += 1) {
     arrOfProgression.push(arrOfProgression[i] + step);
