@@ -11,7 +11,7 @@ const generateProgression = (firstNumber, step, lenghtOfProgr) => {
   }
 
   return arrOfProgression;
-}
+};
 
 const generateRound = () => {
   const firstNumber = getRandom(1, 10);
