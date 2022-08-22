@@ -2,23 +2,23 @@ import enginGame from '../index.js';
 import getRandom from '../utilities.js';
 
 const gameDescription = 'What number is missing in the progression?';
-const lenghtOfProgr = 9;
+const lenghtOfProgression = 9;
 
-const getQuestion = (firstNumber, step, missedNumerIndex) => {
+const getQuestion = (firstNumber, step, missedNumberIndex) => {
   const arrOfProgression = [firstNumber];
-  for (let i = 0; i < lenghtOfProgr; i += 1) {
+  for (let i = 0; i < lenghtOfProgression; i += 1) {
     arrOfProgression.push(arrOfProgression[i] + step);
   }
-  arrOfProgression[missedNumerIndex] = '..';
+  arrOfProgression[missedNumberIndex] = '..';
   return arrOfProgression.join(' ');
 };
 
 const generateRound = () => {
   const firstNumber = getRandom(1, 10);
   const step = getRandom(1, 10);
-  const missedNumerIndex = getRandom(0, lenghtOfProgr);
-  const questionToUser = getQuestion(firstNumber, step, missedNumerIndex);
-  const correctAnswer = String(firstNumber + missedNumerIndex * step);
+  const missedNumberIndex = getRandom(0, lenghtOfProgression);
+  const questionToUser = getQuestion(firstNumber, step, missedNumberIndex);
+  const correctAnswer = String(firstNumber + missedNumberIndex * step);
 
   return [questionToUser, correctAnswer];
 };
