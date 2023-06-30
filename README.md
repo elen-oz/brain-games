@@ -4,19 +4,17 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/6922be521c7684d6c6c9/maintainability)](https://codeclimate.com/github/elen-oz/frontend-project-lvl1/maintainability)
 
-
 ## Project description
 
+Brain Games is a collection of five mini-games designed to challenge the user's mental agility. Each game begins with a greeting, personalized with the user's name, and consists of three rounds.
 
-This project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name.
-The number of rounds in all games is three.
+## Games
 
-
-- brain-even: asks the user if the number is even;
-- brain-calc: asks for the result of an operation on two numbers (addition, subtraction, multiplication);
-- brain-gcd: asks for the greatest common divisor of two numbers;
-- brain-progression: asks for the missing element of an arithmetic progression;
-- brain-prime: asks the user if a number is prime.
+- **Brain Even**: The game asks the user to determine if a number is even.
+- **Brain Calc**: The game presents an arithmetic operation (addition, subtraction, multiplication) on two numbers and asks the user to calculate the result.
+- **Brain GCD**: The game asks the user to find the greatest common divisor of two numbers.
+- **Brain Progression**: The game presents an arithmetic progression with one number missing and asks the user to identify the missing number.
+- **Brain Prime**: The game asks the user to determine if a number is prime.
 
 # Game preview:
 
@@ -39,3 +37,15 @@ The number of rounds in all games is three.
 5. Brain-prime:
 
    [![asciicast](https://asciinema.org/a/5ljg2Bw3meFKNL9MVR9lfnbup.svg)](https://asciinema.org/a/5ljg2Bw3meFKNL9MVR9lfnbup)
+
+## Installation
+
+Before you start, make sure you have Node.js and npm installed on your machine.
+
+1. Clone this repository to your local machine using `https://github.com/elen-oz/brain-games.git`
+2. Navigate to the project directory: `cd brain-games`
+3. Install all required dependencies with `npm install`
+
+## Usage
+
+To run a game, use the command `npm run [game-name]`. Replace `[game-name]` with the name of the game you want to play (e.g., `brain-even`, `brain-calc`, etc.).
